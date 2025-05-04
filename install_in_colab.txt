@@ -6,3 +6,10 @@ condacolab.install()
 #after installing conda, run the below commmand for installing fastai from 2 channels: fastai & pytorch
 !conda install -c fastai -c pytorch fastai
 !conda install fastbook
+
+
+#or the other way is to resolve conflicting dependency
+#hide
+! [ -e /content ] && pip install -Uqq fastbook fsspec==2025.3.2
+import fastbook
+fastbook.setup_book()
