@@ -5,5 +5,4 @@ condacolab.install()
 
 #after installing conda, run the below commmand for installing fastai from 2 channels: fastai & pytorch
 !conda install -c fastai -c pytorch fastai
-#or use
-!pip install fastbook
+!conda install fastbook
